@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Room>
+
+<h1>Here is a list of available rooms that meet your capacity requirements:</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Room Number</th>
+            <th>Capacity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Room r in Model) {
+            <tr>
+                <td>
+                    @r.Number
+                </td>
+                <td>
+                    @r.Capacity
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

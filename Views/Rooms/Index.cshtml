@@ -1,0 +1,9 @@
+﻿@model List<Room>
+
+<h1>Here is a list of all of our rooms:</h1>
+
+<ul>
+    @foreach(Room r in Model) {
+        <li>Room number:@r.Number Capacity: @r.Capacity</li>
+    }
+</ul>
